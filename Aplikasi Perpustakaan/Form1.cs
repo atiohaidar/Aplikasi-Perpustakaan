@@ -26,5 +26,35 @@ namespace Aplikasi_Perpustakaan
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLihatDaftarBuku_Click(object sender, EventArgs e)
+        {
+            DaftarBuku lihatDaftarBuku = new DaftarBuku();
+            lihatDaftarBuku.Show();
+        }
+
+        private void btnRiwayatPeminjaman_Click(object sender, EventArgs e)
+        {
+            RiwayatPeminjaman riwayatPeminjaman = new RiwayatPeminjaman();
+            riwayatPeminjaman.Show();
+        }
+
+        private void btnTambahBuku_Click(object sender, EventArgs e)
+        {
+            TambahBuku tambahBuku = new TambahBuku();
+            tambahBuku.Show();
+        }
+
+        private void btnPinjamBuku_Click(object sender, EventArgs e)
+        {
+            PinjamBuku pinjamBuku = new PinjamBuku();
+            pinjamBuku.Show();
+
+        }
     }
 }

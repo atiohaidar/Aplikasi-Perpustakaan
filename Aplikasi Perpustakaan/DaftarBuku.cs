@@ -19,5 +19,17 @@ namespace Aplikasi_Perpustakaan
         {
 
         }
+
+        private void btnEditBuku_Click(object sender, EventArgs e)
+        {
+            UpdateBuku updateBuku = new UpdateBuku();
+            updateBuku.ShowDialog();
+        }
+
+        private void btnDeleteBuku_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Apakah anda akan mengapus buku ini?", "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+        }
     }
 }

@@ -8,17 +8,16 @@ using System.Windows.Forms;
 
 namespace Aplikasi_Perpustakaan
 {
-    public partial class TambahBuku : Form
+    public partial class PinjamBuku : Form
     {
-        public TambahBuku()
+        public PinjamBuku()
         {
             InitializeComponent();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
-        }
+       }
 
         private void btnBatal_Click(object sender, EventArgs e)
         {

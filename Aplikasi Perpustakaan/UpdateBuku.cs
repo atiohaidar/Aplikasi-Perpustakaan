@@ -15,9 +15,14 @@ namespace Aplikasi_Perpustakaan
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBatal_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
         }
     }
 }

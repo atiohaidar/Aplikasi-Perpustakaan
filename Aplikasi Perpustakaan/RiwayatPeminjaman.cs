@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Aplikasi_Perpustakaan
 {
-    public partial class Form2 : Form
+    public partial class RiwayatPeminjaman : Form
     {
-        public Form2()
+        public RiwayatPeminjaman()
         {
             InitializeComponent();
         }

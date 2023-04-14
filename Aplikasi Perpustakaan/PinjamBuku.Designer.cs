@@ -1,6 +1,6 @@
 ﻿namespace Aplikasi_Perpustakaan
 {
-    partial class UpdateBuku
+    partial class PinjamBuku
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.numKuantitas = new System.Windows.Forms.NumericUpDown();
-            this.txtPengarang = new System.Windows.Forms.TextBox();
-            this.txtJudul = new System.Windows.Forms.TextBox();
+            this.txtKodeBuku = new System.Windows.Forms.TextBox();
+            this.txtPeminjam = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numKuantitas)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(331, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pinjam Buku";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnBatal);
             this.groupBox1.Controls.Add(this.btnSimpan);
             this.groupBox1.Controls.Add(this.numKuantitas);
-            this.groupBox1.Controls.Add(this.txtPengarang);
-            this.groupBox1.Controls.Add(this.txtJudul);
+            this.groupBox1.Controls.Add(this.txtKodeBuku);
+            this.groupBox1.Controls.Add(this.txtPeminjam);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(242, 63);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Location = new System.Drawing.Point(248, 106);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(304, 238);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnBatal
             // 
@@ -84,19 +94,19 @@
             this.numKuantitas.Size = new System.Drawing.Size(120, 23);
             this.numKuantitas.TabIndex = 6;
             // 
-            // txtPengarang
+            // txtKodeBuku
             // 
-            this.txtPengarang.Location = new System.Drawing.Point(129, 57);
-            this.txtPengarang.Name = "txtPengarang";
-            this.txtPengarang.Size = new System.Drawing.Size(100, 23);
-            this.txtPengarang.TabIndex = 5;
+            this.txtKodeBuku.Location = new System.Drawing.Point(129, 57);
+            this.txtKodeBuku.Name = "txtKodeBuku";
+            this.txtKodeBuku.Size = new System.Drawing.Size(100, 23);
+            this.txtKodeBuku.TabIndex = 5;
             // 
-            // txtJudul
+            // txtPeminjam
             // 
-            this.txtJudul.Location = new System.Drawing.Point(129, 22);
-            this.txtJudul.Name = "txtJudul";
-            this.txtJudul.Size = new System.Drawing.Size(100, 23);
-            this.txtJudul.TabIndex = 4;
+            this.txtPeminjam.Location = new System.Drawing.Point(129, 22);
+            this.txtPeminjam.Name = "txtPeminjam";
+            this.txtPeminjam.Size = new System.Drawing.Size(100, 23);
+            this.txtPeminjam.TabIndex = 4;
             // 
             // label3
             // 
@@ -112,38 +122,28 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 15);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Pengarang Buku";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Judul Buku";
+            this.label2.Text = "Kode Buku";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 31);
+            this.label4.Location = new System.Drawing.Point(15, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 15);
-            this.label4.TabIndex = 9;
-            this.label4.Text = " Update Buku";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Size = new System.Drawing.Size(96, 15);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nama Peminjam";
             // 
-            // UpdateBuku
+            // PinjamBuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
-            this.Name = "UpdateBuku";
-            this.Text = "UpdateBuku";
+            this.Controls.Add(this.label1);
+            this.Name = "PinjamBuku";
+            this.Text = "PinjamBuku";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numKuantitas)).EndInit();
@@ -154,15 +154,15 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.NumericUpDown numKuantitas;
-        private System.Windows.Forms.TextBox txtPengarang;
-        private System.Windows.Forms.TextBox txtJudul;
+        private System.Windows.Forms.TextBox txtKodeBuku;
+        private System.Windows.Forms.TextBox txtPeminjam;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
     }
 }
